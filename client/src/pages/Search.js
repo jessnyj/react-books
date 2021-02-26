@@ -1,16 +1,16 @@
 import React from "react";
 import Container from "../components/container/container";
-import Card from "../components/card/card";
+// import Card from "../components/card/card";
 import Searchbar from "../components/searchbar/searchbar";
 
 function Search() {
 	return (
 		<div className="container">
 			<Searchbar />
-			{/* <Container> */}
+			<Container>
 			{/* map over card array */}
-			{/* <Card /> */}
-			{/* </Container> */}
+			
+			</Container>
 		</div>
 	);
 };
