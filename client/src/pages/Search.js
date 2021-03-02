@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../components/container/container";
+import SearchContainer from "../components/searchcontainer/searchcontainer";
 // import Card from "../components/card/card";
 import Searchbar from "../components/searchbar/searchbar";
 
@@ -7,10 +7,10 @@ function Search() {
 	return (
 		<div className="container">
 			<Searchbar />
-			<Container>
+			<SearchContainer>
 			{/* map over card array */}
 			
-			</Container>
+			</SearchContainer>
 		</div>
 	);
 };
