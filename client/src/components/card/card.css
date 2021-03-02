@@ -1,0 +1,13 @@
+.resultsSearch {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.resultsBtns {
+    display: flex;
+    justify-content: left;
+}
+/* 
+#resultsCard {
+    display: flex;
+} */

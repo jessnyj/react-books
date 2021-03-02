@@ -19,9 +19,9 @@ function Container() {
   }
 
   return (
-    <section className="section is-large">
-      <h1 className="title">Results</h1>
-      {books.map(book => {
+    <div className="container is-widescreen">
+      <div className="notification is-link">
+        {books.map(book => {
         <Card
           key={book.id}
           title={book.title}
@@ -31,10 +31,8 @@ function Container() {
           link={book.link}
         />
       })}
-
-
-    </section>
-
+      </div>
+    </div>
   );
 }
 

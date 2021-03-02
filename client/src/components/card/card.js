@@ -1,31 +1,59 @@
 import React from "react";
+import "./card.css";
 
-function Card({children}) {
+function Card({ children }) {
   return (
-    <div className="card">
-      <div className="card-image">
-        <figure className="image is-4by3">
-          <img src="https://via.placeholder.com/250" alt="Placeholder" />
-        </figure>
-      </div>
-      <div className="card-content">
-        <div className="media">
-          <div className="media-left">
-            <figure className="image is-48x48">
-              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder" />
-            </figure>
+    <div>
+      <h1 className="resultsSearch">Results:</h1>
+      <div className="card">
+        <div className="card-content">
+          <div className="content">
+            <article className="media">
+              <div className="media-left">
+                <h4>Book Title</h4>
+                <h5>Authors</h5>
+              </div>
+              <div className="media-right">
+                <div className="field is-grouped resultsBtns">
+                  <p className="control">
+                  <button class="button is-link is-outlined">View</button>
+                  </p>
+                  <p className="control">
+                  <button class="button is-dark is-outlined">Save</button>
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article className="media">
+              <figure className="media-left">
+                <p className="image is-64x64">
+                  <img src="https://bulma.io/images/placeholders/128x128.png"></img>
+                </p>
+              </figure>
+              <div className="media-content">
+                <div className="content">
+                  <p>
+                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
+                    {"\n"}
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                </p>
+                </div>
+                <nav className="level is-mobile">
+                  <div className="level-left">
+                    <a className="level-item">
+                      <span className="icon is-small"><i className="fas fa-reply"></i></span>
+                    </a>
+                    <a className="level-item">
+                      <span className="icon is-small"><i className="fas fa-retweet"></i></span>
+                    </a>
+                    <a className="level-item">
+                      <span className="icon is-small"><i className="fas fa-heart"></i></span>
+                    </a>
+                  </div>
+                </nav>
+              </div>
+            </article>
           </div>
-          <div className="media-content">
-            <p className="title is-4">John Smith</p>
-            <p className="subtitle is-6">@johnsmith</p>
-          </div>
-        </div>
-
-        <div className="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris.
-      {/* <a href="#">#css</a> <a href="#">#responsive</a> */}
-
         </div>
       </div>
     </div>
