@@ -8,8 +8,22 @@ function Card({ children }) {
       <div className="card">
         <div className="card-content">
           <div className="content">
-            <h4>Book Title</h4>
-            <h5>Authors</h5>
+            <article className="media">
+              <div className="media-left">
+                <h4>Book Title</h4>
+                <h5>Authors</h5>
+              </div>
+              <div className="media-right">
+                <div className="field is-grouped resultsBtns">
+                  <p className="control">
+                  <button class="button is-link is-outlined">View</button>
+                  </p>
+                  <p className="control">
+                  <button class="button is-dark is-outlined">Save</button>
+                  </p>
+                </div>
+              </div>
+            </article>
             <article className="media">
               <figure className="media-left">
                 <p className="image is-64x64">
@@ -38,9 +52,6 @@ function Card({ children }) {
                   </div>
                 </nav>
               </div>
-              {/* <div className="media-right">
-                <button className="delete"></button>
-              </div> */}
             </article>
           </div>
         </div>
