@@ -5,14 +5,14 @@ function Card({children}) {
     <div className="card">
       <div className="card-image">
         <figure className="image is-4by3">
-          <img src="https://via.placeholder.com/250" alt="Placeholder image" />
+          <img src="https://via.placeholder.com/250" alt="Placeholder" />
         </figure>
       </div>
       <div className="card-content">
         <div className="media">
           <div className="media-left">
             <figure className="image is-48x48">
-              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+              <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder" />
             </figure>
           </div>
           <div className="media-content">
@@ -23,8 +23,8 @@ function Card({children}) {
 
         <div className="content">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-      <a href="#">#css</a> <a href="#">#responsive</a>
+      Phasellus nec iaculis mauris.
+      {/* <a href="#">#css</a> <a href="#">#responsive</a> */}
 
         </div>
       </div>
