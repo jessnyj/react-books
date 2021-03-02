@@ -21,16 +21,16 @@ function Container() {
   return (
     <div className="container is-widescreen">
       <div className="notification is-link">
-        {books.map(book => {
+        {books.map(book => (
         <Card
-          key={book.id}
+          key={book._id}
           title={book.title}
           author={book.author}
           description={book.description}
           image={book.image}
           link={book.link}
         />
-      })}
+        ))}
       </div>
     </div>
   );

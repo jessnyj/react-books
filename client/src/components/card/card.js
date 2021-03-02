@@ -16,10 +16,10 @@ function Card(props) {
               <div className="media-right">
                 <div className="field is-grouped resultsBtns">
                   <p className="control">
-                  <button class="button is-link is-outlined">View</button>
+                  <button className="button is-link is-outlined">View</button>
                   </p>
                   <p className="control">
-                  <button class="button is-dark is-outlined">Save</button>
+                  <button className="button is-dark is-outlined">Save</button>
                   </p>
                 </div>
               </div>
@@ -27,30 +27,15 @@ function Card(props) {
             <article className="media">
               <figure className="media-left">
                 <p className="image is-64x64">
-                  <img src={props.image}></img>
+                  <img src={props.image} alt={props.name}></img>
                 </p>
               </figure>
               <div className="media-content">
                 <div className="content">
                   <p>
-                    <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-                    {"\n"}
                     {props.description}
                 </p>
                 </div>
-                <nav className="level is-mobile">
-                  <div className="level-left">
-                    <a className="level-item">
-                      <span className="icon is-small"><i className="fas fa-reply"></i></span>
-                    </a>
-                    <a className="level-item">
-                      <span className="icon is-small"><i className="fas fa-retweet"></i></span>
-                    </a>
-                    <a className="level-item">
-                      <span className="icon is-small"><i className="fas fa-heart"></i></span>
-                    </a>
-                  </div>
-                </nav>
               </div>
             </article>
           </div>
