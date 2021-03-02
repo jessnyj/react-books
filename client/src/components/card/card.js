@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.css";
 
-function Card({ children }) {
+function Card(props) {
   return (
     <div>
       <h1 className="resultsSearch">Results:</h1>
@@ -10,8 +10,8 @@ function Card({ children }) {
           <div className="content">
             <article className="media">
               <div className="media-left">
-                <h4>Book Title</h4>
-                <h5>Authors</h5>
+                <h4>{props.title}</h4>
+                <h5>{props.author}</h5>
               </div>
               <div className="media-right">
                 <div className="field is-grouped resultsBtns">
@@ -27,7 +27,7 @@ function Card({ children }) {
             <article className="media">
               <figure className="media-left">
                 <p className="image is-64x64">
-                  <img src="https://bulma.io/images/placeholders/128x128.png"></img>
+                  <img src={props.image}></img>
                 </p>
               </figure>
               <div className="media-content">
@@ -35,7 +35,7 @@ function Card({ children }) {
                   <p>
                     <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
                     {"\n"}
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                    {props.description}
                 </p>
                 </div>
                 <nav className="level is-mobile">
