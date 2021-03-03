@@ -16,11 +16,12 @@ function Card(props) {
                 </p>
               </figure>
               <div className="media-content">
-                <div className="content desc">
-                  <p>
+                <section className="section is-primary">
+                  <h2 className="title">Description:</h2>
+                  <h3 clasName="subtitle">
                     {props.description}
-                  </p>
-                </div>
+                  </h3>
+                </section>
               </div>
             </article>
             <div className="resultsBtns">
