@@ -1,15 +1,16 @@
 import React from "react";
+import "./jumbotron.css";
 
 function Jumbotron() {
 	return (
-		<section className="hero is-link">
+		<section className="hero is-medium is-link">
 			<div className="hero-body">
-				<p className="title">
+				<p className="headerTitle">
 					React Google Books Search
-    </p>
-				<p className="subtitle">
+				</p>
+				<p className="headerSub">
 					Search for and save books of interest
-    </p>
+				</p>
 			</div>
 		</section>
 	);

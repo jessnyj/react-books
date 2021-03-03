@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "../card/card";
 import API from "../../utils/API";
+import "./container.css";
 
 function Container() {
 
@@ -20,7 +21,8 @@ function Container() {
 
   return (
     <div className="container is-widescreen">
-      <div className="notification is-link">
+      <div className="notification">
+      <h1 className="resultsSearch">Results:</h1>
         {books.map(book => (
         <Card
           key={book._id}

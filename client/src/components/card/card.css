@@ -1,13 +1,27 @@
-.resultsSearch {
-    font-size: 26px;
+.resultsBtns {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#viewBtn {
+    margin-right: 10px;
+}
+
+.cardHold {
+    height: 10%;
+    margin-bottom: 10px;
+}
+
+.titleSaved {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
+}
+
+.authorSaved {
+    font-size: 18px;
+    margin-top: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.resultsBtns {
-    display: flex;
-    justify-content: left;
-}
-/* 
-#resultsCard {
-    display: flex;
-} */

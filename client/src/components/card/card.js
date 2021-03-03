@@ -4,40 +4,39 @@ import "./card.css";
 function Card(props) {
   return (
     <div>
-      <h1 className="resultsSearch">Results:</h1>
-      <div className="card">
+      <div className="card cardHold">
         <div className="card-content">
           <div className="content">
-            <article className="media">
-              <div className="media-left">
-                <h4>{props.title}</h4>
-                <h5>{props.author}</h5>
-              </div>
-              <div className="media-right">
-                <div className="field is-grouped resultsBtns">
-                  <p className="control">
-                  <button className="button is-link is-outlined">View</button>
-                  </p>
-                  <p className="control">
-                  <button className="button is-dark is-outlined">Save</button>
-                  </p>
-                </div>
-              </div>
-            </article>
+            <p className="titleSaved">{props.title}</p>
+            <p className="authorSaved">{props.author}</p>
             <article className="media">
               <figure className="media-left">
-                <p className="image is-64x64">
-                  <img src={props.image} alt={props.name}></img>
+                <p className="image">
+                  <img className="cardImg" src={props.image} alt={props.name}></img>
                 </p>
               </figure>
               <div className="media-content">
-                <div className="content">
-                  <p>
+                <section className="section is-primary">
+                  <h2 className="title">Description:</h2>
+                  <h3 clasName="subtitle">
                     {props.description}
-                </p>
-                </div>
+                  </h3>
+                </section>
               </div>
             </article>
+            <div className="resultsBtns">
+              <p className="control">
+                <a href={props.link}>
+                  <button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
+                </a>
+              </p>
+              <p className="control">
+                <button id="viewBtn" className="button is-link">View</button>
+              </p>
+              <p className="control">
+                <button className="button is-dark">Delete</button>
+              </p>
+            </div>
           </div>
         </div>
       </div>
