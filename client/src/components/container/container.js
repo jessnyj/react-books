@@ -13,8 +13,6 @@ function Container() {
   const allBooks = () => {
     API.getBooks()
       .then(results => {
-        console.log("Results");
-        console.log(results.data);
         setBooks(results.data);
       });
   }

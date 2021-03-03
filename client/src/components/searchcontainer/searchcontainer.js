@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import './searchcontainer.css';
 import SearchCard from '../searchcard/searchcard'
 import Searchbar from "../searchbar/searchbar";
@@ -35,11 +35,11 @@ function SearchContainer() {
 	const handleSaveButton = id => {
 		//filter state for id
 		let tempArr = searchResults.filter(book => book.id === id);
-
+		console.log(tempArr);
 		API.saveBook({
 			title: tempArr[0].volumeInfo.title,
 			authors: tempArr[0].volumeInfo.authors.toString(),
-			description: tempArr[0].searchInfo.textSnippet,
+			description: tempArr[0].volumeInfo.description,
 			image: tempArr[0].volumeInfo.imageLinks.thumbnail,
 			link: tempArr[0].volumeInfo.infoLink
 		})
@@ -66,6 +66,7 @@ function SearchContainer() {
 					{searchResults.map(book => (
 						<SearchCard
 							key={book.id}
+							id={book.id}
 							title={book.volumeInfo.title}
 							authors={book.volumeInfo.authors}
 							description={book.searchInfo.textSnippet}
