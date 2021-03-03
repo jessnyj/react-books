@@ -18,7 +18,7 @@ function Card(props) {
                   <p className="titleSaved">{props.title}</p>
                   <p className="authorSaved">{props.author}</p>
                   <h2 className="title">Description:</h2>
-                  <h3 clasName="subtitle">
+                  <h3 className="subtitle">
                     {props.description}
                   </h3>
                 </section>

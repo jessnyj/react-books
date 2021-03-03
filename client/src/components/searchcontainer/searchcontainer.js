@@ -35,6 +35,25 @@ function SearchContainer() {
 		// console.log(replaced);
 	}
 
+	const handleSaveButton = id => {
+		console.log("HERE");
+		console.log(id);
+
+		//filter state for id
+		//package important key values
+		//API.saveBook(packagedValues)
+		//clear searchTerm
+		//clear page
+	}
+
+	const handleDeleteButton = id => {
+		//pass id prop to button
+		//pass handleDeleteButton function to button via onClick
+
+		//API.deleteBook(id)
+	}
+
+
 	return (
 		<div>
 			<div className="container is-widescreen">
@@ -52,7 +71,8 @@ function SearchContainer() {
 							author={book.volumeInfo.authors}
 							description={book.searchInfo.textSnippet}
 							image={book.volumeInfo.imageLinks.thumbnail}
-						// link={book.volumeInfo.infoLink}
+							link={book.volumeInfo.infoLink}
+							handleSaveButton={handleSaveButton}
 						/>
 					))}
 				</div>

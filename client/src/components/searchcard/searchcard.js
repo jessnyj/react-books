@@ -29,7 +29,7 @@ function SearchCard(props) {
 									</p>
 									<p className="control">
 										<a href={props.link}>
-											<button id="viewBtn" className="button is-link"><i class="fas fa-save"></i></button>
+											<button id="viewBtn" className="button is-link" onClick={() => props.handleSaveButton(props.id)}><i class="fas fa-save"></i></button>
 										</a>
 									</p>
 								</div>
