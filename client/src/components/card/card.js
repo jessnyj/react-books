@@ -18,7 +18,7 @@ function Card(props) {
               <div className="media-content">
                 <section className="section is-primary">
                   <h2 className="title">Description:</h2>
-                  <h3 clasName="subtitle">
+                  <h3 className="subtitle">
                     {props.description}
                   </h3>
                 </section>
@@ -26,15 +26,13 @@ function Card(props) {
             </article>
             <div className="resultsBtns">
               <p className="control">
-									<a href={props.link}>
-										<button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
-									</a>
-								</p>
-								<p className="control">
-									<a href={props.link}>
-										<button id="viewBtn" className="button is-link"><i class="fas fa-trash-alt"></i></button>
-									</a>
-                  </p>
+                <a href={props.link}>
+                  <button id="viewBtn" className="button is-dark"><i className="fas fa-external-link-alt"></i></button>
+                </a>
+              </p>
+              <p className="control">
+                <button id="viewBtn" className="button is-link"><i className="fas fa-trash-alt"></i></button>
+              </p>
             </div>
           </div>
         </div>

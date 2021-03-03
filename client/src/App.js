@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/navbar";
 import Jumbotron from "./components/jumbotron/jumbotron";
 import Search from "./pages/Search";
 import Saved from "./pages/Saved";
-import NoMatch from "./pages/NoMatch";
+// import NoMatch from "./pages/NoMatch";
 
 //Insert state here
 
@@ -24,7 +24,7 @@ function App() {
           <Route exact path="/" component={Search} />
           <Route exact path="/search" component={Search} />
           <Route exact path="/saved" component={Saved} />
-          <Route component={NoMatch} />
+          {/* <Route path="/*" component={NoMatch} /> */}
         </Switch>
       </div>
     </Router>
