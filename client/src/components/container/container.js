@@ -22,7 +22,7 @@ function Container() {
   return (
     <div className="container is-widescreen">
       <div className="notification">
-      <h1 className="resultsSearch">Results:</h1>
+      <h1 className="resultsSearch">Saved Books:</h1>
         {books.map(book => (
         <Card
           key={book._id}

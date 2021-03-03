@@ -5,9 +5,14 @@ import SearchCard from '../searchcard/searchcard'
 function SearchContainer() {
 	return (
 		<div>
-			<SearchCard>
-				
-			</SearchCard>
+			<div className="container is-widescreen">
+				<div className="notification">
+					<h1 className="resultsSearch">Results:</h1>
+					<SearchCard>
+
+					</SearchCard>
+				</div>
+			</div>
 		</div>
 	);
 };
