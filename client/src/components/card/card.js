@@ -26,16 +26,15 @@ function Card(props) {
             </article>
             <div className="resultsBtns">
               <p className="control">
-                <a href={props.link}>
-                  <button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
-                </a>
-              </p>
-              <p className="control">
-                <button id="viewBtn" className="button is-link">View</button>
-              </p>
-              <p className="control">
-                <button className="button is-dark">Delete</button>
-              </p>
+									<a href={props.link}>
+										<button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
+									</a>
+								</p>
+								<p className="control">
+									<a href={props.link}>
+										<button id="viewBtn" className="button is-link"><i class="fas fa-trash-alt"></i></button>
+									</a>
+                  </p>
             </div>
           </div>
         </div>

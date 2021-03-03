@@ -32,10 +32,9 @@ function SearchCard(props) {
 									</a>
 								</p>
 								<p className="control">
-									<button id="viewBtn" className="button is-link">View</button>
-								</p>
-								<p className="control">
-									<button className="button is-dark">Save</button>
+									<a href={props.link}>
+										<button id="viewBtn" className="button is-link"><i class="fas fa-save"></i></button>
+									</a>
 								</p>
 							</div>
 						</div>
