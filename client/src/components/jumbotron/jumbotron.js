@@ -7,10 +7,10 @@ function Jumbotron() {
 			<div className="hero-body">
 				<p className="headerTitle">
 					React Google Books Search
-    </p>
+				</p>
 				<p className="headerSub">
 					Search for and save books of interest
-    </p>
+				</p>
 			</div>
 		</section>
 	);
