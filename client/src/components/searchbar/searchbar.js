@@ -9,7 +9,7 @@ function Searchbar() {
 					Book Search
 				<div className="content">
 						<label className="label bookLabel">Book:</label>
-						<input className="input is-link" type="text" placeholder="Link input" />
+						<input className="input is-link" type="text" placeholder="Enter a book title" />
 						<button className="button is-link searchBtn">Search</button>
 					</div>
 				</div>

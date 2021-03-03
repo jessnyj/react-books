@@ -2,6 +2,10 @@
     margin-top: 20px;
 }
 
+.searchBtn:hover {
+    background-color: rgb(106, 189, 238);
+}
+
 .bookLabel {
     margin-top: 20px;
     margin-bottom: 10px;

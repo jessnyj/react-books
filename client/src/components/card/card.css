@@ -7,6 +7,10 @@
     margin-right: 10px;
 }
 
+#viewBtn:hover {
+    background-color: rgb(106, 189, 238);
+}
+
 .cardHold {
     height: 10%;
     margin-bottom: 10px;
