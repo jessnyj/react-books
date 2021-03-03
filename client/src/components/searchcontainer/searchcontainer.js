@@ -14,13 +14,11 @@ function SearchContainer() {
 	// }, [searchTerm])
 
 	const getSearchResults = searchTerm => {
-		console.log("SearchtTerm: " + searchTerm);
-
-		API.searchBookName(searchTerm).then(result => {
-			console.log(result);
-			setSearchResults(result);
-
-		}).catch(err => console.log(err));
+		API.searchBookName(searchTerm)
+			.then(result => {
+				setSearchResults(result);
+			})
+			.catch(err => console.log(err));
 	}
 
 	const handleInputSearch = e => {
@@ -32,16 +30,24 @@ function SearchContainer() {
 		setSearchTerm(replaced);
 		inputRef.current.value = "";
 		getSearchResults(replaced);
-		// console.log(replaced);
 	}
 
 	const handleSaveButton = id => {
-		console.log("HERE");
-		console.log(id);
-
 		//filter state for id
-		//package important key values
-		//API.saveBook(packagedValues)
+		let tempArr = searchResults.filter(book => book.id === id);
+
+		API.saveBook({
+			title: tempArr[0].volumeInfo.title,
+			authors: tempArr[0].volumeInfo.authors.toString(),
+			description: tempArr[0].searchInfo.textSnippet,
+			image: tempArr[0].volumeInfo.imageLinks.thumbnail,
+			link: tempArr[0].volumeInfo.infoLink
+		})
+			.then(result =>
+				console.log(result)
+			)
+			.catch(err => console.log(err));
+
 		//clear searchTerm
 		//clear page
 	}
