@@ -19,7 +19,7 @@ function SearchContainer() {
 		API.searchBookName(searchTerm).then(result => {
 			console.log(result);
 			setSearchResults(result);
-			
+
 		}).catch(err => console.log(err));
 	}
 
@@ -35,27 +35,48 @@ function SearchContainer() {
 		// console.log(replaced);
 	}
 
+	const handleSaveButton = id => {
+		console.log("HERE");
+		console.log(id);
+
+		//filter state for id
+		//package important key values
+		//API.saveBook(packagedValues)
+		//clear searchTerm
+		//clear page
+	}
+
+	const handleDeleteButton = id => {
+		//pass id prop to button
+		//pass handleDeleteButton function to button via onClick
+
+		//API.deleteBook(id)
+	}
+
+
 	return (
 		<div>
 			<div className="container is-widescreen">
 				<div className="notification">
 					<h1 className="resultsSearch">Results:</h1>
 					<Searchbar
-				inputRef={inputRef}
-				value={searchTerm}
-				handleInputSearch={handleInputSearch}
-			/>
+						inputRef={inputRef}
+						value={searchTerm}
+						handleInputSearch={handleInputSearch}
+					/>
 
-			{searchResults.map(book => (
-				<SearchCard
-					key={book.id}
-					title={book.volumeInfo.title}
-					author={book.volumeInfo.authors}
-					description={book.searchInfo.textSnippet}
-					image={book.volumeInfo.imageLinks.thumbnail}
-					// link={book.volumeInfo.infoLink}
-				/>
-			))}
+					{searchResults.map(book => (
+						<SearchCard
+							key={book.id}
+							id={book.id}
+							title={book.volumeInfo.title}
+							author={book.volumeInfo.authors}
+							description={book.searchInfo.textSnippet}
+							image={book.volumeInfo.imageLinks.thumbnail}
+							link={book.volumeInfo.infoLink}
+							handleSaveButton={handleSaveButton}
+						/>
+					))}
 				</div>
 			</div>
 		</div>
