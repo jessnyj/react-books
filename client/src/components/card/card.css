@@ -16,6 +16,10 @@
     margin-bottom: 10px;
 }
 
+.cardHold:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
 .titleSaved {
     font-size: 25px;
     font-weight: bold;
