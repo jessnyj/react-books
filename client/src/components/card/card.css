@@ -27,7 +27,7 @@
     font-size: 25px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .authorSaved {
@@ -42,4 +42,5 @@
 .desc {
     display: flex;
     justify-content: space-around;
+    /* font-size: 1.5vw; */
 }

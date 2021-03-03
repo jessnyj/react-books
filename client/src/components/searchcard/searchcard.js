@@ -17,9 +17,9 @@ function SearchCard(props) {
 								<div>
 									<p className="titleSaved">{props.title}</p>
 									<p className="authorSaved">{props.author}</p>
-									<h4 className="subtitle desc">
+									<p className="subtitle desc">
 										{props.description}
-									</h4>
+									</p>
 								</div>
 								<div className="resultsBtns">
 									<p className="control">
