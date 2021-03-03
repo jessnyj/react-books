@@ -13,6 +13,20 @@ function Jumbotron() {
 				</p>
 			</div>
 		</section>
+
+
+		// <div>
+		// 	<div>
+		// 		<figure><img className="header" src="../../bookReact.png" alt="book"></img>
+		// 		<p className="centered headerTitle">
+		// 			React Google Books Search
+		// 		</p>
+		// 		<div className="centered headerSub">
+		// 			Search for and save books of interest
+		// 		</div>
+		// 		</figure>
+		// 	</div>
+		// </div>
 	);
 }
 
