@@ -19,7 +19,7 @@
 [Deployed Link]()
 
 ## Site Gif
-![Site]()
+![Site](/demo.gif)
 
 ## Technologies Used
 * React
@@ -38,7 +38,7 @@
 This is a full stack React based application that allows users to search for Google Books, add them to their Saved page, and delete them from their page as well. 
 
 ## Work Involved
-For this application, we utilized React and Bulma in order to design the front end aspects of the site. For the backend, we utilized MongoDB and Mongoose in order to allow a user to save and delete books to the database. 
+For this application, we utilized React and Bulma in order to design the front end aspects of the site. For the backend, we utilized MongoDB and Mongoose in order to allow a user to save and delete books from the database. 
 
 ## Code Snippet
 * This function utilizes the Google Books API in order to render the list of books. 
@@ -67,11 +67,11 @@ This project is covered under MIT.
 
 **Muhammad Khalid**
 * [Github](https://github.com/akhalid88)
-* [LinkedIn]()
+* [LinkedIn](https://www.linkedin.com/in/abdullahkhalid/)
 
 **Coleman Buffa** 
 * [Github](https://github.com/coleman-buffa)
-* [LinkedIn]()
+* [LinkedIn](https://www.linkedin.com/in/coleman-buffa/)
 
 ## Acknowledgments
 Trilogy Education Services

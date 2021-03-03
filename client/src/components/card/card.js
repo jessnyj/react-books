@@ -5,35 +5,34 @@ function Card(props) {
   // console.log(props);
   return (
     <div>
-      <div className="card cardHold">
-        <div className="card-content">
-          <div className="content">
-            <article className="media">
-              <figure className="media-left">
-                <p className="image">
-                  <img className="cardImg" src={props.image} alt={props.name}></img>
-                </p>
-              </figure>
-              <div className="media-content">
-                <section className="section is-primary">
+      <div>
+        <div className="card cardHold">
+          <div className="card-content">
+            <div className="content">
+              <article className="media">
+                <figure className="media-left">
+                  <p className="image">
+                    <img className="cardImg" src={props.image} alt={props.name}></img>
+                  </p>
+                </figure>
+                <div>
                   <p className="titleSaved">{props.title}</p>
-                  <p className="authorSaved">{props.author}</p>
-                  <h2 className="title">Description:</h2>
-                  <h3 className="subtitle">
+                  <p className="authorSaved">{props.authors}</p>
+                  <p className="subtitle desc">
                     {props.description}
-                  </h3>
-                </section>
-              </div>
-            </article>
-            <div className="resultsBtns">
-              <p className="control">
-                <a href={props.link}>
-                  <button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
-                </a>
-              </p>
-              <p className="control">
-                <button id="viewBtn" className="button is-link" onClick={() => props.handleDeleteButton(props.id)}><i className="fas fa-trash-alt"></i></button>
-              </p>
+                  </p>
+                </div>
+                <div className="resultsBtns">
+                  <p className="control">
+                    <a href={props.link}>
+                      <button id="viewBtn" className="button is-dark"><i className="fas fa-external-link-alt"></i></button>
+                    </a>
+                  </p>
+                  <p className="control">
+                    <button id="viewBtn" className="button is-link" onClick={() => props.handleDeleteButton(props.id)}><i className="fas fa-trash-alt"></i></button>
+                  </p>
+                </div>
+              </article>
             </div>
           </div>
         </div>

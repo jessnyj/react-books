@@ -16,7 +16,7 @@ function SearchCard(props) {
 								</figure>
 								<div>
 									<p className="titleSaved">{props.title}</p>
-									<p className="authorSaved">{props.author}</p>
+									<p className="authorSaved">{props.authors}</p>
 									<p className="subtitle desc">
 										{props.description}
 									</p>
@@ -24,13 +24,11 @@ function SearchCard(props) {
 								<div className="resultsBtns">
 									<p className="control">
 										<a href={props.link}>
-											<button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
+											<button id="viewBtn" className="button is-dark"><i className="fas fa-external-link-alt"></i></button>
 										</a>
 									</p>
 									<p className="control">
-										<a href={props.link}>
-											<button id="viewBtn" className="button is-link" onClick={() => props.handleSaveButton(props.id)}><i class="fas fa-save"></i></button>
-										</a>
+											<button id="viewBtn" className="button is-link" onClick={() => props.handleSaveButton(props.id)}><i className="fas fa-save"></i></button>
 									</p>
 								</div>
 							</article>
