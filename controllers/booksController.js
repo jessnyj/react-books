@@ -4,8 +4,6 @@ module.exports = {
 	findAll: function (req, res) {
 		db.Book.find()
 			.then(dbBook => {
-				console.log("DbBook");
-				console.log(dbBook);
 				res.json(dbBook)
 			})
 			.catch(err => res.status(422).json(err));

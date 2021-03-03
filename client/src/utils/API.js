@@ -19,10 +19,8 @@ export default {
   },
   searchBookName: function (bookName) {
     return new Promise((resolve, reject) => {
-      console.log("https://www.googleapis.com/books/v1/volumes?q=" + bookName);
       axios.get("https://www.googleapis.com/books/v1/volumes?q=" + bookName)
         .then((res) => {
-          console.log(res.data.items);
           resolve(res.data.items.slice(0, 3));
         }).catch((err) => reject(err));
     })

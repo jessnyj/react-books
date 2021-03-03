@@ -5,10 +5,7 @@ import Container from "../components/container/container";
 function Search() {
 	return (
 		<div className="container">
-			<Container>
-			{/* map over card array */}
-			
-			</Container>
+			<Container />
 		</div>
 	);
 };

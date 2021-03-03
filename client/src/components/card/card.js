@@ -2,6 +2,7 @@ import React from "react";
 import "./card.css";
 
 function Card(props) {
+  // console.log(props);
   return (
     <div>
       <div className="card cardHold">
@@ -31,9 +32,7 @@ function Card(props) {
                 </a>
               </p>
               <p className="control">
-                <a href={props.link}>
-                  <button id="viewBtn" className="button is-link"><i class="fas fa-trash-alt"></i></button>
-                </a>
+                <button id="viewBtn" className="button is-link" onClick={() => props.handleDeleteButton(props.id)}><i className="fas fa-trash-alt"></i></button>
               </p>
             </div>
           </div>
