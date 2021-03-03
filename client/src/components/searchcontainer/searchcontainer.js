@@ -37,7 +37,10 @@ function SearchContainer() {
 
 	return (
 		<div>
-			<Searchbar
+			<div className="container is-widescreen">
+				<div className="notification">
+					<h1 className="resultsSearch">Results:</h1>
+					<Searchbar
 				inputRef={inputRef}
 				value={searchTerm}
 				handleInputSearch={handleInputSearch}
@@ -53,7 +56,8 @@ function SearchContainer() {
 					// link={book.volumeInfo.infoLink}
 				/>
 			))}
-
+				</div>
+			</div>
 		</div>
 	);
 };
