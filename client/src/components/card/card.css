@@ -12,7 +12,8 @@
 }
 
 .cardHold {
-    height: 10%;
+    margin-top: 10px;
+    height: 5%;
     margin-bottom: 10px;
     background-color: #ffffff;
 }
