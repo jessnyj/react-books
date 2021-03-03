@@ -10,29 +10,29 @@ const bookSeed = [
 		title: "1984",
 		author: "George Orwell",
 		description: "Stuff happens in the year 1984",
-		image: "",
-		link: ""
+		image: "http://books.google.com/books/content?id=kotPYEqx7kMC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+		link: "https://play.google.com/store/books/details?id=kotPYEqx7kMC&source=gbs_api"
 	},
 	{
 		title: "The Way of Kings",
 		author: "Brandon Sanderson",
 		description: "Read this book now!",
-		image: "",
-		link: ""
+		image: "http://books.google.com/books/content?id=QVn-CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+		link: "https://books.google.com/books?id=QVn-CgAAQBAJ&dq=the+way+of+kings&hl=&source=gbs_api"
 	},
 	{
 		title: "Rich Dad Poor Dad",
 		author: "Robert Kiyosaki",
 		description: "Money stuff",
-		image: "",
-		link: ""
+		image: "http://books.google.com/books/content?id=hXAiDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+		link: "http://books.google.com/books?id=hXAiDAAAQBAJ&dq=ric+dad+poor+dad&hl=&source=gbs_api"
 	},
 	{
 		title: "Starship Troopers",
 		author: "Robert Heinlein",
 		description: "Bugs in Space!!!!",
-		image: "",
-		link: ""
+		image: "http://books.google.com/books/content?id=rmEIDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+		link: "https://books.google.com/books?id=rmEIDAAAQBAJ&dq=starship+troopers&hl=&source=gbs_api"
 	},
 ];
 
