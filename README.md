@@ -1,38 +1,28 @@
-# react-books
+# React Books
 
 ![License](https://img.shields.io/badge/license-MIT-181717?style=for-the-badge) 
 
 ## Table of Contents
-* [Title](#title)
-* [Deployed Link](#deployed-link)
-* [Site Gif](#site-gif)
-* [Technologies Used](#technologies-used)
-* [Description](#description)
-* [Work Involved](#work-involved)
-* [Code Snippet](#code-snippet)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgments](#acknowledgments)
+||||
+|:-:|:-:|:-:|
+|[Table Contents](#table-of-contents)|[Deployed Link](#deployed-link)|[Technologies Used](#technologies-used)
+|[Description](#description)|[Work Involved](#work-involved)|[Code Snippet](#code-snippet)
+|[License](#license)|[Authors](#authors)|[Acknowledgments](#acknowledgments)
+
+---
 
 ## Deployed Link
-* Click this link to view the site.
 [Deployed Link]()
 
 ## Site Gif
-![Site](/demo.gif)
+![Site](./demo.gif)
 
 ## Technologies Used
-* React
-* Mongoose
-* MongoDB
-* Google Books API
-* HTML
-* CSS
-* javascript
-* Bulma
-* Robo3T
-* Github
-* Heroku
+|||||
+|:-:|:-:|:-:|:-:|
+|React|Mongoose|MongoDB|Google Books API|HTML
+|CSS|Javascript|Bulma|Robo3T
+|Github|Heroku|Node|Express
 
 ## Description
 This is a full stack React based application that allows users to search for Google Books, add them to their Saved page, and delete them from their page as well. 
@@ -41,8 +31,8 @@ This is a full stack React based application that allows users to search for Goo
 For this application, we utilized React and Bulma in order to design the front end aspects of the site. For the backend, we utilized MongoDB and Mongoose in order to allow a user to save and delete books from the database. 
 
 ## Code Snippet
-* This function utilizes the Google Books API in order to render the list of books. 
-```
+This function utilizes the Google Books API in order to render the list of books. 
+```javascript
   searchBookName: function (bookName) {
     return new Promise((resolve, reject) => {
       console.log("https://www.googleapis.com/books/v1/volumes?q=" + bookName);
@@ -62,16 +52,16 @@ This project is covered under MIT.
 ## Authors
 
 **Jessny Joseph** 
-* [Github](https://github.com/jessnyj)
-* [LinkedIn](https://www.linkedin.com/in/jessny-joseph-361515201)
+
+[Github](https://github.com/jessnyj) | [LinkedIn](https://www.linkedin.com/in/jessny-joseph-361515201)
 
 **Muhammad Khalid**
-* [Github](https://github.com/akhalid88)
-* [LinkedIn](https://www.linkedin.com/in/abdullahkhalid/)
+
+[Github](https://github.com/akhalid88) | [LinkedIn](https://www.linkedin.com/in/abdullahkhalid/)
 
 **Coleman Buffa** 
-* [Github](https://github.com/coleman-buffa)
-* [LinkedIn](https://www.linkedin.com/in/coleman-buffa/)
+
+[Github](https://github.com/coleman-buffa) | [LinkedIn](https://www.linkedin.com/in/coleman-buffa/)
 
 ## Acknowledgments
-Trilogy Education Services
+Many things to the mentors and friends who are a continuous source of project inspiration and learning opportunities. 
