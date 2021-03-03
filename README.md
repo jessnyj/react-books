@@ -1,9 +1,11 @@
 # react-books
 
+![License](https://img.shields.io/badge/license-MIT-181717?style=for-the-badge) 
+
 ## Table of Contents
 * [Title](#title)
 * [Deployed Link](#deployed-link)
-* [Site Picture](#site-gif)
+* [Site Gif](#site-gif)
 * [Technologies Used](#technologies-used)
 * [Description](#description)
 * [Work Involved](#work-involved)
