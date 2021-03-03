@@ -48,8 +48,7 @@ function SearchContainer() {
 			)
 			.catch(err => console.log(err));
 
-		//clear searchTerm
-		//clear page
+		setSearchResults([]);
 	}
 
 	const handleDeleteButton = id => {
