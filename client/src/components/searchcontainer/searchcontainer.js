@@ -51,12 +51,6 @@ function SearchContainer() {
 		setSearchResults([]);
 	}
 
-	const handleDeleteButton = id => {
-		//pass id prop to button
-		//pass handleDeleteButton function to button via onClick
-
-		//API.deleteBook(id)
-	}
 
 
 	return (

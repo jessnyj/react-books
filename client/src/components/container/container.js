@@ -19,19 +19,29 @@ function Container() {
       });
   }
 
+  const handleDeleteButton = id => {
+    API.deleteBook(id)
+      .then(res => console.log(res))
+      .catch(err => console.log(err));
+
+  }
+
+
   return (
     <div className="container is-widescreen">
       <div className="notification">
-      <h1 className="resultsSearch">Saved Books:</h1>
+        <h1 className="resultsSearch">Saved Books:</h1>
         {books.map(book => (
-        <Card
-          key={book._id}
-          title={book.title}
-          authors={book.authors}
-          description={book.description}
-          image={book.image}
-          link={book.link}
-        />
+          <Card
+            key={book._id}
+            id={book._id}
+            title={book.title}
+            authors={book.authors}
+            description={book.description}
+            image={book.image}
+            link={book.link}
+            handleDeleteButton={handleDeleteButton}
+          />
         ))}
       </div>
     </div>
