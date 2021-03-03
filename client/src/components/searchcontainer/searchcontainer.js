@@ -75,7 +75,7 @@ function SearchContainer() {
 							key={book.id}
 							id={book.id}
 							title={book.volumeInfo.title}
-							author={book.volumeInfo.authors}
+							authors={book.volumeInfo.authors}
 							description={book.searchInfo.textSnippet}
 							image={book.volumeInfo.imageLinks.thumbnail}
 							link={book.volumeInfo.infoLink}

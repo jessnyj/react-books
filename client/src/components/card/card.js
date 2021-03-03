@@ -2,13 +2,14 @@ import React from "react";
 import "./card.css";
 
 function Card(props) {
+  console.log(props);
   return (
     <div>
       <div className="card cardHold">
         <div className="card-content">
           <div className="content">
             <p className="titleSaved">{props.title}</p>
-            <p className="authorSaved">{props.author}</p>
+            <p className="authorSaved">{props.authors}</p>
             <article className="media">
               <figure className="media-left">
                 <p className="image">

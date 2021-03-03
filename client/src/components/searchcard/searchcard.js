@@ -9,7 +9,7 @@ function SearchCard(props) {
 					<div className="card-content">
 						<div className="content">
 							<p className="titleSaved">{props.title}</p>
-							<p className="authorSaved">{props.author}</p>
+							<p className="authorSaved">{props.authors}</p>
 							<article className="media">
 								<figure className="media-left">
 									<p className="image">

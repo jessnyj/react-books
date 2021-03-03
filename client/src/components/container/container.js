@@ -27,7 +27,7 @@ function Container() {
         <Card
           key={book._id}
           title={book.title}
-          author={book.author}
+          authors={book.authors}
           description={book.description}
           image={book.image}
           link={book.link}
