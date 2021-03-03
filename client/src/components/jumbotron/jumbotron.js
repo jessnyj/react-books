@@ -3,7 +3,7 @@ import "./jumbotron.css";
 
 function Jumbotron() {
 	return (
-		<section className="hero is-link">
+		<section className="hero is-medium is-link">
 			<div className="hero-body">
 				<p className="headerTitle">
 					React Google Books Search
