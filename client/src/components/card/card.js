@@ -27,14 +27,14 @@ function Card(props) {
             <div className="resultsBtns">
               <p className="control">
                 <a href={props.link}>
-                  <button id="viewBtn" className="button is-danger is-outlined"><i class="fas fa-external-link-square-alt"></i></button>
+                  <button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
                 </a>
               </p>
               <p className="control">
-                <button id="viewBtn" className="button is-link is-outlined">View</button>
+                <button id="viewBtn" className="button is-link">View</button>
               </p>
               <p className="control">
-                <button className="button is-dark is-outlined">Delete</button>
+                <button className="button is-dark">Delete</button>
               </p>
             </div>
           </div>
