@@ -1,11 +1,12 @@
 .headerTitle {
     text-align: center;
-    font-size: 45px;
+    font-size: 55px;
+    font-weight: bold;
 }
 
 .headerSub {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 
 }
 .header {
@@ -14,5 +15,7 @@
 }
 
 .hero-body {
-    background-image: url("../../bookReact.png");
+    background-image: url("https://images.pexels.com/photos/768125/pexels-photo-768125.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
 }

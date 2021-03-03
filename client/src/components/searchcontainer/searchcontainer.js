@@ -58,17 +58,15 @@ function SearchContainer() {
 		<div>
 			<div className="container is-widescreen">
 				<div className="notification">
-					<h1 className="resultsSearch">Results:</h1>
 					<Searchbar
 						inputRef={inputRef}
 						value={searchTerm}
 						handleInputSearch={handleInputSearch}
 					/>
-
+					<h1 className="resultsSearch">Results:</h1>
 					{searchResults.map(book => (
 						<SearchCard
 							key={book.id}
-							id={book.id}
 							title={book.volumeInfo.title}
 							author={book.volumeInfo.authors}
 							description={book.searchInfo.textSnippet}
