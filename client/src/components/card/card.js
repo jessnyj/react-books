@@ -7,8 +7,6 @@ function Card(props) {
       <div className="card cardHold">
         <div className="card-content">
           <div className="content">
-            <p className="titleSaved">{props.title}</p>
-            <p className="authorSaved">{props.author}</p>
             <article className="media">
               <figure className="media-left">
                 <p className="image">
@@ -17,6 +15,8 @@ function Card(props) {
               </figure>
               <div className="media-content">
                 <section className="section is-primary">
+                  <p className="titleSaved">{props.title}</p>
+                  <p className="authorSaved">{props.author}</p>
                   <h2 className="title">Description:</h2>
                   <h3 clasName="subtitle">
                     {props.description}
@@ -26,15 +26,15 @@ function Card(props) {
             </article>
             <div className="resultsBtns">
               <p className="control">
-									<a href={props.link}>
-										<button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
-									</a>
-								</p>
-								<p className="control">
-									<a href={props.link}>
-										<button id="viewBtn" className="button is-link"><i class="fas fa-trash-alt"></i></button>
-									</a>
-                  </p>
+                <a href={props.link}>
+                  <button id="viewBtn" className="button is-dark"><i class="fas fa-external-link-alt"></i></button>
+                </a>
+              </p>
+              <p className="control">
+                <a href={props.link}>
+                  <button id="viewBtn" className="button is-link"><i class="fas fa-trash-alt"></i></button>
+                </a>
+              </p>
             </div>
           </div>
         </div>
